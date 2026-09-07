@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Special Day ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <main>
+
+        <section class="page active" id="home">
+            <div class="small-text">A LITTLE SURPRISE FOR YOU</div>
+
+            <h1>Her Special Day<br><span>is Coming</span></h1>
+
+            <p class="intro">
+                Someone very special is about to celebrate another beautiful year.
+            </p>
+
+            <div class="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>DAYS</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>HOURS</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>MINUTES</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>SECONDS</small>
+                </div>
+            </div>
+
+            <p class="date">SEPTEMBER 12 ♡</p>
+
+            <button class="next-btn" onclick="showPage('gift')">
+                A little surprise awaits
+                <span>→</span>
+            </button>
+        </section>
+
+
+        <section class="page" id="gift">
+
+            <div class="small-text">JUST FOR YOU</div>
+
+            <div class="gift" id="giftBox" onclick="openGift()">
+                <div class="gift-lid"></div>
+                <div class="gift-body"></div>
+                <div class="gift-ribbon vertical"></div>
+                <div class="gift-ribbon horizontal"></div>
+                <div class="bow left"></div>
+                <div class="bow right"></div>
+            </div>
+
+            <h2>There's something<br>waiting for you...</h2>
+
+            <p id="giftText">Tap the gift ♡</p>
+
+            <button class="next-btn hidden" id="giftButton" onclick="showPage('message')">
+                Open your birthday message
+                <span>→</span>
+            </button>
+
+        </section>
+
+
+        <section class="page" id="message">
+
+            <div class="small-text">FOR THE PERSON I LOVE</div>
+
+            <h2>Happy Birthday</h2>
+
+            <div class="message-card">
+
+                <p>
+                    Happy birthday, my love. ♡
+                </p>
+
+                <p>
+                    Today is a special day because it is the day
+                    someone as wonderful as you came into this world.
+                </p>
+
+                <p>
+                    I know we're far from each other, and I wish I could
+                    be there beside you to celebrate this day.
+                    But even with all the distance between us,
+                    please remember that you are always close to my heart.
+                </p>
+
+                <p>
+                    Thank you for being you. Thank you for all the little
+                    moments, conversations, laughs, and memories we've shared.
+                    Even when I can't be there physically, I hope you can
+                    feel how much you mean to me.I know you've been through a lot in life, 
+                  but all of that is just a test and I'll always be here for you, no matter what happens, 
+                  I'll never leave you, even if you're far away, I can make you feel how much I love you,
+                  I'm just here for you. 
+                </p>
+
+                <p>
+                    I hope your birthday brings you happiness,
+                    peace, and everything your heart has been wishing for.
+                </p>
+              
+            
+
+                <p class="signature">
+                    Happy birthday, my love. ♡
+                </p>
+
+            </div>
+
+            <button class="next-btn" onclick="showPage('wishes')">
+                Birthday wishes for you
+                <span>→</span>
+            </button>
+
+        </section>
+
+
+        <section class="page" id="wishes">
+
+            <div class="small-text">A FEW WISHES FOR YOU</div>
+
+            <h2>Birthday Wishes</h2>
+
+            <div class="wishes-card">
+
+                <div class="wish">
+                    <span>♡</span>
+                    <p>May you always have reasons to smile.</p>
+                </div>
+
+                <div class="wish">
+                    <span>♡</span>
+                    <p>May you reach every dream you've been working for.</p>
+                </div>
+
+                <div class="wish">
+                    <span>♡</span>
+                    <p>May you always be surrounded by people who genuinely care about you.</p>
+                </div>
+
+                <div class="wish">
+                    <span>♡</span>
+                    <p>May this new chapter of your life be filled with beautiful moments.</p>
+                </div>
+
+                <div class="wish">
+                    <span>♡</span>
+                    <p>And most of all, I hope you never forget how loved and appreciated you are.</p>
+                </div>
+
+            </div>
+
+            <button class="next-btn" onclick="showPage('outro')">
+                One last thing...
+                <span>→</span>
+            </button>
+
+        </section>
+
+
+        <section class="page outro" id="outro">
+
+            <div class="floating-heart">♡</div>
+
+            <div class="small-text">SEPTEMBER 12</div>
+
+            <h1>
+                Your Special Day
+            </h1>
+
+            <p class="outro-message">
+                Distance may keep us apart for now,
+                but it could never make you any less special to me.
+            </p>
+
+            <p class="outro-message">
+                So today, I hope you smile a little more,
+                dream a little bigger,
+                and remember that someone is always cheering for you.
+            </p>
+
+            <div class="final-line">
+                Happy Birthday, my love. ♡
+            </div>
+
+            <div class="tiny-text">
+                Always rooting for you.
+            </div>
+
+            <button class="restart-btn" onclick="showPage('home')">
+                ↻ Replay
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
